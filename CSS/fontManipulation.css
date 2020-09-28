@@ -1,0 +1,29 @@
+body {
+    font-size: 1.2em;
+    font-weight: 400;
+    /* weight is bolding {not supported by all fonts} */
+    
+}
+
+.welcome {
+    font-style: italic;
+    /* other values are oblique and bold
+    {not supported by all fonts} */
+}
+
+.services {
+    font-family: 'Oswald', sans-serif;
+    /* broadly three most used font families are sans, sans-serif and monospace */
+    /* usually all popular websites and organisations use sans-serif as it is easier to read */
+    /* if the name of the font is longer than one word, it needs to be enclosed in commas */
+
+    /* commonly use more than one fonts where if some fonts are not supported or not 
+    available, others can be used */
+
+    /* TO USE EXTERNAL FONTS:
+    go to google fonts and find the fonts for the webpage, copy the link tag code provided and 
+    paste it above the css link tag in the HTML document*/
+    /* then you can just use all the fonts included in that link directly like any other font */
+}
+
+
