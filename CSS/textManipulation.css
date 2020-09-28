@@ -1,0 +1,21 @@
+a.link {
+    text-decoration: none;
+    /* removes the line beneath the link */
+
+    /* text-decoration: overline; */
+    /* puts a line above the link */
+}
+
+p.text1 {
+    text-transform: capitalize;
+    /* capitalize the first letter of each word*/
+    /* text-transform: lowercase; for lower case all letters*/
+    /* text-transform: uppercase; for upper case all letters */
+}
+
+p.text2 {
+    text-align: center;
+    /* align all text to the center */
+    /* right, left and justify works expectedly */
+}
+
