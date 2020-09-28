@@ -1,0 +1,73 @@
+
+body {
+    /* setting a RGB color as the bg */
+    background: rgb(112, 225, 253);  
+}
+
+#title {
+    color : rgb(18, 65, 219);
+    background: rgba(197, 138, 10, 0.9);
+    /* RGBA the "A" in the end is for the opacity of the color, where 
+    "1 is a 100%" and "0 is 0%" */
+
+    /* using RGB colors is recommended than hex code because it is easily editable
+    you can just increase the amount of blue without finding the code again */
+    
+    /* You can increase or decrease the amount of RGB equally to keep the same 
+    color but lighter or darker */
+}
+
+.random-division1 {
+    width: 300px;
+    height: 300px;
+    /* setting an image as bg */
+    /* the url function can take in any address local or on the internet */
+    background: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.VSfV2zsIoPy2tnSuvX3eEQHaEK%26pid%3DApi&f=1");
+    background-repeat: no-repeat;  /*the property to remove repetition of bg */
+    background-size: cover; 
+    /* specifying the size of image, and keywords like cover, contain, eic. */
+}
+
+/* gradients */
+
+/* LINEAR GRADIENT */
+.random-division2 {
+    width: 300px;
+    height: 300px;
+    
+    background: linear-gradient(to top right, rgb(35, 218, 28), yellow, rgba(241, 101, 101, 0.6));
+    
+    /* just use the linera gradient function and add the direction and then add 
+    as many color as you want, can mix up rgb, rgba, name colors, etc. */
+    
+    /* The directions can be 
+    "top", "bottom", "right", "left", 
+    "top right", "bottom right", "top left", "bottom left" */
+    
+}
+
+.random-division3 {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(150deg, red, blue);
+    /* linear gradients with direction in degrees */
+}
+
+/* RADIAL GRADIENT */
+.random-division4 {
+    width: 300px;
+    height: 500px;
+    background: radial-gradient(red 40%, blue 60%);
+    /* By default the shape of the radial gradient is elipse 
+    but ot change it to cirlc, you need to specify it before the colors */
+
+    /* IMPORTANT : specifying the percentages is optional BUT if you do, 
+    they need to be ascending order */
+}
+
+.random-division5 {
+    width: 300px;
+    height: 500px;
+    background: radial-gradient(circle, red 40%, blue 60%);
+}
+
