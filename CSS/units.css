@@ -1,0 +1,42 @@
+/* types of units : absolute and  relative*/
+
+/* ABSOLUTE UNITS */
+/* absolute units are constant no matter what display is used to view */
+
+/* pixels are considered absolute value because the size as per display 
+doesn't change but pixels are special and can adjust with density of the 
+display wrt to pixel */
+.text {
+    font-size: 2cm;
+}
+
+.text1 {
+    font-size: 5pc;
+}
+
+/* RELATIVE UNITS are very useful for responsive design */
+/* relative units are dependent on something whether parent, display size, etc. */
+
+/* the percentage unit is relative because it si dependent on the parent 
+if a image is set to 50 %, then the image will always be 50% of it parent*/
+
+.text2 {
+    font-size: 150%;
+}
+
+body {
+    /* font-size: 4em; */
+    /* em doubles the font-size of all the text */
+}
+
+.text3 {
+    font-size: 15vw;
+    /* vw represents the view port's width
+    1vw is 1% of the view port's width 
+    {view port is the display being viewed on} */
+}
+
+.text4 {
+    font-size:10vh;
+    /* vh is same as vw but relative to the view port's height */
+}
