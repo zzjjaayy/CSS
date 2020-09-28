@@ -1,0 +1,73 @@
+/*the words used to mention specific elements or items in the html are called "selectors"
+"p" or "h1" {element selector}, 
+".main" ".box" used for classes, 
+"#main" for ids */
+
+h1.main {
+    color: red;
+}
+
+/*
+SPECIFICITY:
+The concept in css whihc decides if there are two values applied to the same item
+The element the selector is overrided by the class selector {the one that starts with "."}
+The class selector is overrided by the id selector {one with "#"}
+The most powerful is in-line styling {the one which is spplied in html's tag itself}
+For example :
+If the same item has a "id" and "class" and both are used in css to define different colors to 
+the text, the color defined under the "id" selector will be used in the output, so , the more 
+powerful method, will be used to display. 
+The order is : element < class < id < in-line styling.
+Therefore, no matter what is defined in the external css, if the in-line styling overrides any property, 
+the in-line property will be used
+
+For example : 
+If an "h1" has an id="main" and is used in css like this : #main{color:red}
+but the h1 tag has a style attribute and that specifies "color:blue", then the color will be "blue".
+*/
+
+/*
+PSEUDOSELECTORS :
+Only activiated when the user interacts with the website in a specific way : example : "hover"
+*/
+h1:hover {
+    color : green;
+}
+/*selectors for specific children
+The statement below specifies the element talked about and specifies the number of the child's position; 
+notice- we don't specify the parent but the child element
+*/
+li:first-child {
+    color : blue;
+}
+li:last-child {
+    color:green;
+}
+li:nth-child(2) {
+    color: yellow;
+}
+
+/* the above properties will have effect on all lists present in the webpage 
+to prevent that, you can specify the class or id name before the "li:last-child" or others
+*/
+
+.child-example li:last-child {
+    color: black; 
+    /* will turn the last child list item of the specific list into black */
+}
+
+li:only-child {
+    color: red;
+    /* only-child will only wokr on elements with only one children, therefore this color
+     change will not affect lists with more items */
+}
+
+/* there are many more pseudoselectors but these are the most used ones which style the 
+link based on whether the user has visited the link */
+#google-link:link {
+    color : blue;
+}
+
+#google-link:visited {
+    color : red;
+}

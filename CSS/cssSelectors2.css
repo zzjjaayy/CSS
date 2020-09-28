@@ -1,0 +1,40 @@
+/* Advanced Selectors */
+
+h2 + a {
+    color : red;
+}
+/* The plus symbol tells that every "a" tag after an "h2" tag will be styled in the following way*/
+
+h1 ~ h2 {
+    color : yellow;
+}
+/* This selector works in the same way as the precious one but in this case, 
+the elements need to share the same parent. For example : if the h2 is out of 
+the parent div, then this won't work*/
+
+ul > li {
+    color : blue;
+    /* this selector applies to all children of the specific type in the parent 
+        notice: the "h2" in the list wasn't styles because type "li" was specified*/
+}
+
+.test-list1 li {
+    color : purple;
+    /* The above will style all the list items in the specifies ul, the list items of 
+    the child list will also be affected */
+}
+
+/* Attribute Selectors */
+img[src="../Images/pic.png"] {
+    width : 1000px;
+    height: 500px;
+    /* This is an example of attribute selector where you can select the element with a specific attribute
+        in this case, the image with the specific name/path will be styled */
+}
+
+img[src^="../Images/"] {
+    border: 10px solid black;
+    /* The "^=" is used to specify that the base url of both the images is same and therefore we can 
+    target two images with different paths through the src attribute */
+}
+
