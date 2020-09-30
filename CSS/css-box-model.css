@@ -1,0 +1,33 @@
+/* The CSS box model */
+/* the concept is that every element is surrounded by invisible 
+boxes that are connected in some way */
+/* these boxes together are used to position different elements */
+/* the boxes are padding, border and margin */
+
+/* padding is for giving room for the content in other words 
+increasing space between content and border */
+/* margin is supposed to give room to the whole element 
+from external elements */
+
+#scene1-image {
+    width: 60%;
+    height: 400px;
+    border: 5px double rgb(75, 72, 72);
+    /* syntax for border css = "border: thickness style color"*/
+    /* styles : solid, dotted, dashed, double */
+    /* color and thickness can be any */
+    padding: 10px; /*10 px of space from the content on all sides */
+    margin: 10px; /*10 px of space from the border on all sides */
+}
+
+#scene2-image {
+    margin: 10px 10px 10px 10px; /*10 px of space from the border on all sides */
+    /* the order of the above line is -> top right bottom left*/
+    /* specific values are also allowed like margin-right */
+    /* padding: 10px 10px; if you only add two then first value
+    is for "top&bottom" and the other is for "right&left" */
+    
+    border: 5px solid black;
+    padding: 5px 2px 2px;
+    /* the three value are in the following order -> "top" "left&right" "bottom" */
+}
