@@ -1,0 +1,42 @@
+/* each element has a display type
+mainly there two display types -> block and inline */
+
+/* block level items are contained in a new line and have their own block 
+ whereas the inline items are placed one after the other even in line
+For example: span is an inline element and image is a block element, 
+where span doesn't need its own line, image does*/
+
+/* float can place the elements in line and in different ways no 
+matter how they are inherently displayed */
+
+/* the below blocks shows the use of float to get the text on the left and image on the right whereas both were initially block-level elements */
+.text {
+    float: left;
+}
+
+.scene2 {
+    width: 400px;
+    float: right;
+    /* other values of float are:
+    inherit: use float value of parent
+    none: don't float {leave as if float wasn't applied} */
+}
+
+/* display properties */
+.table {
+    border: 1px solid black;
+    padding : 10px;
+    margin: 10px;
+    display: inline;
+
+    /* display: none; */
+    /* the element is GONE {not invisible}*/
+}
+
+.parent {
+    border: 2px solid black;
+    display: inline-block;
+    /* inline and inline-block are very similar, trial and error {for me} */
+    padding: 3px;
+}
+
