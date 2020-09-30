@@ -1,0 +1,52 @@
+/* flex box is simply a flexible box */
+/* another way to create layouts in CSS in a responsive manner */
+/* there two elements in a flexbox -> 
+container and flex-items{children of the container} */
+
+.container {
+    background-color: grey;
+    display: flex; /* this makes the container flex */
+    flex-direction: row; /* row is the default value */ 
+    /* possible values for flex-direction ->
+    column, row, column-reverse, row-reverse, */
+
+    flex-wrap: wrap;
+    /* wrap is set to "nowrap" by default, which means if the number 
+    of items exceeds the available space, the flex box will try to 
+    squeeze it in.
+    Whereas, in "wrap" the items that don't fit are switched to the 
+    next row*/    
+}
+
+.container2 {
+    background-color: grey;
+    display: flex;
+    flex-wrap: wrap;
+
+    height: 300px;
+    margin-top: 30px;
+
+
+    justify-content: space-between;
+    /* justify content aligns the items in a flex box */
+    /* the "space-between" creates equally divided 
+    between them but not on the edges */
+    /* the space-around is just like "space-between"
+    but created space on the edges too 
+    {it is more like equal spaced but in the middle of the container}*/
+
+    align-items: center;
+    /* the difference center in justify-content and center in align-items 
+    is that "align-items aligns vertically" and the content is not stretched 
+    to the height of the container whereas "justify-content aligns horizontally" */
+
+}
+
+.flex-item {
+    background-color: green;
+    color: white;
+    width: 70px;
+    text-align: center;
+    margin: 5px;
+    line-height: 70px;
+}
