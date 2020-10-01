@@ -1,0 +1,16 @@
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: grey;
+    height: 300px;
+}
+
+.flex-item {
+    background-color: green;
+    color: white;
+    width: 70px;
+    text-align: center;
+    margin: 5px;
+    line-height: 70px;
+}
